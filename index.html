@@ -13,6 +13,7 @@
   <link rel="icon" type="image/x-icon" href="immaculate.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
 
 
   <!-- Bootstrap CSS v5.2.1 -->
@@ -24,10 +25,10 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white mx-5">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white mx-5">
         <nav class="navbar navbar-light bg-white">
             <a class="navbar-brand bg-white" href="#">
-              <img src="immaculate.svg" width="30" height="30" alt="">
+              <img class="justify-content-center" src="immaculate.svg" width="30" height="30" alt="">
             </a>
           </nav>
         <!-- <a class="navbar-brand fw-bold mx-3" href="#">IMMACULATE</a> -->
@@ -37,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">WANITA</a>
+              <a class="nav-link fw-bold" href="#">WANITA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PRIA</a>
+              <a class="nav-link fw-bold" href="#">PRIA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">UNISEX</a>
+              <a class="nav-link fw-bold" href="#">UNISEX</a>
             </li>
           </ul>
          
@@ -101,7 +102,7 @@
         </button>
       </div>
 
-      <div class="mx-5">
+      <div class="categories mx-5">
         <h1 class="text-center fw-bold my-5">SEARCH BY CATEGORIES</h1>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
@@ -132,7 +133,7 @@
                 <div class="card border-0">
                   <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/454780/item/idgoods_55_454780.jpg?width=320" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title fw-bold text-center">Kemeja</h5>
+                    <h5 class="card-title fw-bold text-center">Celana</h5>
                   </div>
                 </div>
               </div>
@@ -151,47 +152,101 @@
         </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
-        <div class="col">
+      <div class="product row row-cols-1 row-cols-md-4 g-4 my-5">
+        <div class="outer col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449753/item/idgoods_12_449753.jpg?width=320" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">SOFT JACKET SUPER</h5>
+                <p class="card-text">Jaket super lembut ini adalah pilihan yang sempurna untuk menambahkan sentuhan kenyamanan dan gaya pada busana sehari-hari Anda.</p>
+                <p class="fw-bold text-decoration-line-through">Rp.10.000.00</p>
+                <h3 class="card text fw-bold border-0 text-danger">Rp. 5.000.00</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="outer col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/463193/item/idgoods_55_463193.jpg?width=450" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">MATCHA GREENTEA SWEATER</h5>
+                <p class="card-text"> Pilihan yang sempurna untuk merayakan semangat Natal dengan gaya yang hangat dan ceria.</p>
+                <h3 class="card text fw-bold border-0">Rp. 15.000.00</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="outer col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/465884/item/idgoods_55_465884.jpg?width=320" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">SWEATER STUDIO GHIBLI</h5>
+                <p class="card-text">Terbuat dari bahan berkualitas tinggi, sweater ini menghadirkan kenyamanan luar biasa sambil memancarkan keajaiban dunia animasi Studio Ghibli.</p>
+                <h3 class="card text fw-bold border-0">Rp. 20.000.00</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="outer col">
           <div class="card border-0" style="width: 18rem;">
-            <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449753/item/idgoods_12_449753.jpg?width=320" class="card-img-top" alt="...">
+            <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/459677/item/idgoods_35_459677.jpg?width=320" alt="...">
             <div class="card-body">
-              <h5 class="card-title fw-bold">Soft jacket Super Lembut</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <p class="fw-bold text-decoration-line-through">Rp.10.000.00</p>
-              <h3 class="card text fw-bold border-0 text-danger">Rp. 5.000.00</h3>
+              <h5 class="card-title fw-bold">HYBRID JACKET DOWN x RCYCL</h5>
+              <p class="card-text">jacket kolaborasi dengan RCYCL dengan bahan recycled cotton kualitas tinggi.</p>
+              <h3 class="card text fw-bold border-0">Rp. 50.000.00</h3>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card border-0" style="width: 18rem;">
-            <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/463193/item/idgoods_55_463193.jpg?width=450" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Soft jacket Super Lembut</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <h3 class="card text fw-bold border-0">Rp. 5.000.00</h3>
+        <div class="celana col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/459704/item/goods_01_459704.jpg?width=320" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">CELANA ANKLE RAPI (COTTON)</h5>
+                <p class="card-text">pilihan yang modis dan serbaguna untuk melengkapi gaya pakaian sehari-hari Anda. Didesain dengan panjang yang berhenti tepat di atas mata kaki atau di bagian pergelangan.</p>
+                <h3 class="card text fw-bold border-0">Rp. 50.000.00</h3>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="card border-0" style="width: 18rem;">
-            <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449753/item/idgoods_12_449753.jpg?width=320" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Soft jacket Super Lembut</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <h3 class="card text fw-bold border-0">Rp. 5.000.00</h3>
+        <div class="celana col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/462618/item/goods_07_462618.jpg?width=320" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">CELANA MIRACLE AIR SENSE</h5>
+                <p class="card-text">Teknologi pengaliran udara canggih dengan kenyamanan optimal dalam setiap kegiatan. Dirancang dengan inovasi untuk memberikan sirkulasi udara yang baik.</p>
+                <h3 class="card text fw-bold border-0">Rp. 50.000.00</h3>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="card border-0" style="width: 18rem;">
-            <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/449753/item/idgoods_12_449753.jpg?width=320" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Soft jacket Super Lembut</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <h3 class="card text fw-bold border-0">Rp. 5.000.00</h3>
+        <div class="celana col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0" style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/461643/item/idgoods_53_461643.jpg?width=320" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">WHITE CARGO LURUS</h5>
+                <p class="card-text">Tampil modis dan fungsional untuk gaya santai dengan sentuhan klasik. Celana ini memiliki potongan lurus yang memberikan kesan rapi dan bersih.</p>
+                <h3 class="card text fw-bold border-0">Rp. 50.000.00</h3>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div class="kemeja col">
+          <a class="text-decoration-none" href="">
+            <div class="card border-0 " style="width: 18rem;">
+              <img src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/453160/item/idgoods_68_453160.jpg?width=320" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">KEMEJA BROADCLOTH FINE</h5>
+                <p class="card-text">Ciptakan tampilan yang santai dan stylish dalam berbagai kesempatan. Didesain dengan perhatian pada kenyamanan dan gaya santai.</p>
+                <h3 class="card text fw-bold border-0">Rp. 50.000.00</h3>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
@@ -210,6 +265,10 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+  
 </body>
 
 </html>
