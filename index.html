@@ -49,13 +49,14 @@
           </ul>
          
         </div>
-        <a class="btn" weight="50" height="50" href="#" role="button">
+        <!-- <a class="btn" weight="50" height="50" href="#" role="button">
           <i class="bi bi-star"></i>
-        </a>
+        </a> -->
         <a class="btn" weight="50" height="50" href="#" role="button">
           <i class="bi bi-bag"></i>
         </a>
-        <a class="btn" weight="50" height="50" href="#" role="button">
+        <!-- Update the 'href' attribute with the desired WhatsApp number and pre-filled message -->
+        <a class="email btn" href="https://wa.me/+1234567890?text=Hai%20saya%20ingin%20melakukan%20pemesanan%20dan%20mengetahui%20info%20terkait%20produk!" role="button">
           <i class="bi bi-envelope"></i>
         </a>
         <a name="" id="" class="btn" weight="50" height="50" href="#" role="button">
@@ -267,6 +268,32 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all product category elements
+      var categories = document.querySelectorAll(".categories .card-title");
+  
+      // Get all product category containers
+      var productCategories = document.querySelectorAll(".product .col");
+  
+      // Add click event listener to each category element
+      categories.forEach(function (category) {
+        category.addEventListener("click", function () {
+          // Hide all product categories
+          productCategories.forEach(function (productCategory) {
+            productCategory.style.display = "none";
+          });
+  
+          // Show the corresponding product category based on the clicked category
+          var selectedCategory = category.textContent.toLowerCase();
+          var selectedProductCategory = document.querySelector("." + selectedCategory);
+          if (selectedProductCategory) {
+            selectedProductCategory.style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
 
   
 </body>
