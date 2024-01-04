@@ -8,13 +8,13 @@ var typed = new Typed(".kontenerspan",{
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get all product category elements
+    // kategori element
     var categories = document.querySelectorAll(".categories .card-title");
 
-    // Get all product category containers
+    // element kontener
     var productCategories = document.querySelectorAll(".product .col");
 
-    // Add click event listener to each category element
+    
     categories.forEach(function (category) {
       category.addEventListener("click", function () {
         // Hide all product categories
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
           productCategory.style.display = "none";
         });
 
-        // Show the corresponding product category based on the clicked category
+       
         var selectedCategory = category.textContent.toLowerCase();
         var selectedProductCategory = document.querySelector("." + selectedCategory);
         if (selectedProductCategory) {
@@ -31,3 +31,36 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    var products = document.querySelectorAll(".product .card");
+    var cartItemsContainer = document.getElementById("cartItems");
+
+    products.forEach(function (product) {
+        product.addEventListener("click", function () {
+            var clonedProduct = product.cloneNode(true);
+            cartItemsContainer.appendChild(clonedProduct);
+        });
+    });
+
+    // buat masukin email
+    var checkoutForm = document.getElementById("checkoutForm");
+    checkoutForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get email dari user
+        var userEmail = document.getElementById("email").value;
+
+        // masukin value produk ke cart
+        var selectedProductNames = [];
+        var cartItems = cartItemsContainer.querySelectorAll(".card-title");
+        cartItems.forEach(function (item) {
+            selectedProductNames.push(item.textContent.trim());
+        });
+
+        // nampilin yang dipilih
+        console.log("Email: " + userEmail);
+        console.log("Selected Products: " + selectedProductNames.join(", "));
+    });
+});
