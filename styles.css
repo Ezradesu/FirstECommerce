@@ -8,6 +8,13 @@ body{
     transform: scale(1.1);
 }
 
+.footer-widget p {
+    margin-bottom: 27px;
+}
+
+.futer{
+    background-color: red;
+}
 
 ::-webkit-scrollbar{
     width: 5px;
